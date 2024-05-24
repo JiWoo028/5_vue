@@ -49,10 +49,10 @@
             </div>
             <div class="row">
               <div class="col">
-                <ul class="list-group">
+                <ul class="list-group"> 
                   <li v-for="item in todoList" :key="item.id" class="list-group-item"
-                    :class="{'list-group-item-success':item.completed}">
-                    <span class="pointer" :class="item.completed ? todo-done : ' '"
+                    :class="{'list-group-item-success':item.completed}"> 
+                    <span class="pointer" :class="item.completed ? 'todo-done' : ''"
                     @click="toggleCompleted(item.id)">{{item.plan}} {{item.completed ? '(완료)' : ''}}</span>
                     <span class="float-end badge bg-secondary pointer" @click="deleteTodo(item.id)">삭제</span>
                   </li>
